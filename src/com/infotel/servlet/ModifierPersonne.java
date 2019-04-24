@@ -38,8 +38,6 @@ public class ModifierPersonne extends HttpServlet {
 		request.setAttribute("lastname", p.getNom());
 		request.setAttribute("firstname", p.getPrenom());
 		request.setAttribute("age", p.getAge());
-		/*request.setAttribute("login", p.getConnexion().getLogin());
-		request.setAttribute("age", p.getConnexion().getMdp());*/
 		
 		request.setAttribute("personnes", service.findAllPersonnes());
 		request.setAttribute("adresses", service.findAllAdresses());
